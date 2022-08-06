@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* section:header-section */
+.header-section {
+    width: 100%;
+    background: #E0EDF2;
+    padding: 1.7% 5.5%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand--logo {
+    margin-top: -4%;
+}
+
+.brand--logo {
+    background: url(./Group\ 270.png);
+    width: 171.44px;
+    height: 52px;
+    position: absolute;
+}
+
+.navbar__brand--middle {
+    margin-left: 15%;
+}
+
+.navbar__brand--middle ul{
+    float: right;
+  }
+
+  .navbar__brand--middle {
+    margin-left: 15%;
+}
+
+.navbar__brand--middle ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: .5s;
+    color: #222222;
+    margin-left: 22px;
+}
+
+.navbar__brand--middle ul li a:hover,
+.navbar__brand--middle ul li a.active{
+    color: #222222;
+}
+
+.navbar__brand--middle ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar__brand--middle ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+.navbar__brand--middle ul ul li{
+    background-color: #FFFFFF;
+    width: 315px;
+    height: 44px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+
+.navbar__brand--middle ul ul li a{
+    line-height: 50px;
+}
+
+.navbar__brand--middle ul ul ul{
+    border-top: none;
+}
+
+.navbar__brand--middle ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.navbar__brand--middle ul ul li a i{
+    margin-left: 45px;
+}
+
+.navbar__brand--item {
+    display: flex;
+}
+
+.navbar__brand--list {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar__brand--link {
+    text-decoration: none;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    font-style: m;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.brand--button {
+    background: #64A6BD;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
